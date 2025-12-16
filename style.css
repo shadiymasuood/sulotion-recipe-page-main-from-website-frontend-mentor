@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+font-size: clamp(15px,1.3vw,20px);  
+--White: hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+}
+@font-face{
+    src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+    font-family:"outfit";
+}
+body
+{
+ word-spacing: 2px;
+font-family:"outfit",sans-serif;
+font-size: clamp(10px,3vw,1rem);
+/*display: flex;/* to stretch the main if flex-dirction : row */
+/*flex-direction:column; /* this is soultion but not his need */ 
+min-width: 200px;   /*--- this is soultion for tow line code is top ---- */ 
+min-height: 2200px;
+background-color: var(--Stone-100);
+}
+main{
+    background-color:var(--White);
+    display: flex;
+    margin: 20px auto;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 900px;
+    line-height: 1.5;
+ border-radius:1rem;
+    gap: 20px;/* between header main and artical */
+   
+}
+p{
+    font-size: 1rem;
+}
+
+#paragraph-header{
+font-size: 1.2rem;
+}
+.main-header{
+    padding: 1rem;
+
+}
+.header-image{
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-radius:1rem;
+}
+
+h1{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+article{
+    display: flex;/* for doing gab */
+    gap: 1rem;
+    flex-direction: column;
+    margin: 0 2rem;
+    
+}
+
+
+.time{
+padding:1.5rem;
+border-radius: 0.4rem;
+background-color: var(--Rose-50);
+
+}
+h3,h2{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    color: var(--Rose-800);
+}
+h2{
+    color:var(--Brown-800)
+}
+ul,ol{
+    margin-left: 1.1rem;
+   
+}
+li{
+    color: var(--Stone-600);
+    margin-bottom: 0.5rem;
+     padding-left: 1rem; /*I lerning space between marker and list content */
+}
+li:last-child{
+    margin-bottom: 0;
+}
+ ul li::marker{
+    color: var(--Rose-800);
+    font-weight: bold;
+
+}
+ol li::marker{
+    color: var(--Brown-800);
+    font-weight: 700;
+}
+.span-list-bolad{
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--Stone-900);
+}
+#paragraph-footer{
+    margin-bottom: 1rem;
+}
+.brown-pargraph{
+    color:var(--Brown-800);
+    font-weight: 700;
+}
+.section-foot-grid{
+    display:grid ;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+}
+
+.hr-grid{
+    grid-column: 1/span 2;
+}
+@media (max-width:400px) {
+    body{
+        min-height: 1600px
+    }
+    main{ 
+        padding: 0 0 1rem ;
+        margin: 0;
+    }
+    .main-header{
+        padding: 0;
+    }
+    .content-header{
+      margin:0 2rem ;
+    }
+    .header-image{
+        border-radius: 0;
+    }
+}
