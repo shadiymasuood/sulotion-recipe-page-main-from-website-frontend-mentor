@@ -46,7 +46,7 @@ This repository contains my solution for the **Recipe Page** challenge from Fron
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/recipe-page-main.git
+git clone https://github.com/shadiymasuood/sulotion-recipe-page-main-from-website-frontend-mentor.git
 cd recipe-page-main
 ```
 
